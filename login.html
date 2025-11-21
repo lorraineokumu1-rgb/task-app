@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+     <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* ===== Light Pastel Blue Theme ===== */
+        body {
+            background: linear-gradient(135deg, #e8f1fb, #dfeaf6, #edf4fc);
+            font-family: "Poppins", sans-serif;
+            text-align: center;
+            padding-top: 110px;
+            color: #333;
+        }
+
+        .login-box {
+            width: 360px;
+            margin: auto;
+            background: #ffffffd9;
+            padding: 30px 35px;
+            border-radius: 15px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+            backdrop-filter: blur(6px);
+        }
+
+        .login-box h2 {
+            margin-bottom: 25px;
+            color: #2b3d52;
+            font-weight: 600;
+        }
+
+        .login-box input {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #c5d3e4;
+            margin-bottom: 18px;
+            background: #f8fbff;
+            font-size: 15px;
+            outline: none;
+            transition: 0.2s;
+        }
+
+        .login-box input:focus {
+            border-color: #8bb8e8;
+            background: #ffffff;
+            box-shadow: 0 0 0 2px #d2e5f8;
+        }
+
+        .login-box button {
+            width: 100%;
+            padding: 13px 0;
+            font-size: 16px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            background: #7aa8d6;
+            color: white;
+            transition: 0.25s;
+        }
+
+        .login-box button:hover {
+            background: #95bee6;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        #msg {
+            margin-top: 15px;
+            color: #2b3d52;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Login</h2>
+
+    <input id="username" placeholder="Username"><br><br>
+    <input id="password" type="password" placeholder="Password"><br><br>
+
+    <button onclick="login()">Log In</button>
+
+    <p id="msg"></p>
+
+    <script src="login.js"></script>
+</body>
+</html>
